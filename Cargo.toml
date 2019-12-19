@@ -5,5 +5,9 @@ authors = ["zhouwei215664 <zhouwei215664@sogou-inc.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+# 在 Cargo.toml 文件中，标题以及之后的内容属同一个片段，直到遇到下一个标题才开始新的片段。
+# rust 中的依赖叫做crate
 [dependencies]
+# 随机数库
+# 0.75 事实上是 ^0.7 的简写，它表示 “任何与 0.7 版本公有 API 相兼容的版本”
+rand = "0.7"
