@@ -4,6 +4,11 @@ version = "0.1.0"
 authors = ["zhouwei215664 <zhouwei215664@sogou-inc.com>"]
 edition = "2018"
 
+#在release模式中 panic 时直接终止
+#[profile.release]
+#panic = 'abort'
+
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 # 在 Cargo.toml 文件中，标题以及之后的内容属同一个片段，直到遇到下一个标题才开始新的片段。
 # rust 中的依赖叫做crate
